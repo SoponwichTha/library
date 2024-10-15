@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>My Library</header>
+  <div class="container-main">
+
+    <div id="errorMsg" class="error-msg"></div>
+
+    <div class="form-container" id="bookFormContainer">
+      <form id="bookForm">
+        <label class="input-form" for="title">Add new book</label>
+        <input class="input" type="text" id="title" placeholder="Title" required maxlength="100">
+        <input class="input" type="text" id="author" placeholder="Author" required maxlength="100">
+        <input class="input" type="number" id="pages" placeholder="Pages" required min="0" max="10000">
+        <div class="is-read">
+          <label class="input-form" for="isRead">Have you read it?</label>
+          <input class="checkbox" type="checkbox" id="isRead" />
+        </div>
+        <button id="addBookBtn" class="btn btn-light-green" type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <div class="book-display" id="booksGrid"></div>
+  </div>
+
+</body>

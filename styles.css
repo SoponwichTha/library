@@ -1,0 +1,141 @@
+body {
+    font-family: "Noto Sans", "Roboto", serif;
+    font-weight: normal;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    /* background-color: #ebe3d8; */
+    background-color: #FAF9F6;
+    word-wrap: break-word;
+    margin-bottom: 100px;
+}
+
+header {
+    background-color: #EADDCA;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+button,
+input {
+    border: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type='text'],
+input[type='number'] {
+    cursor: text;
+}
+
+.container-main {
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #a8978d;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input {
+    width: 95%;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.input-form {
+    font-size: 1.2rem;
+    padding: 6px;
+    margin: 8px;
+}
+
+.is-read {
+    display: flex;
+    gap: 15px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin-top: 18px;
+    accent-color: white;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 4px;
+    margin: 4px;
+    background-color: #FAF9F6;
+}
+
+.btn {
+    padding: 10 15;
+    border-radius: 4%;
+    transition: filter 0.15s ease-in-out;
+}
+
+.btn:hover {
+    filter: brightness(90%);
+}
+
+.btn-light-green {
+    background-color: #93C572;
+}
+
+.btn-light-red {
+    background-color: #FA8072;
+}
+
+.book-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background: #EADDCA;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.1;
+}
+
+.card-button {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#addBookBtn {
+    padding: 10px;
+    min-width: 160px;
+}
